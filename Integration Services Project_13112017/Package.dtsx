@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{6C33B395-4FA6-4608-94FF-E9FF98F6CCC9}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{B51EBB92-AA80-4C52-80F5-323502959222}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="\\dynamiccredit\dfs01\Homes\AZsigmond\Visual Studio 2017\Projects\Integration Services Project_13112017\=Source\books.csv">
+          DTS:ConnectionString="C:\WorkingOn\_git\BookLibraries\ETL_BookLibrary\=Source\books.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -81,7 +81,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAN9rqFCF4XEW37NqQZwywVwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACYK4icuxG0asjfWFcfgEjaAAAAAASAAACgAAAAEAAAAKTKY9q6MmkobtqPbcKpzroYAAAAlnaVvjIMpVrmQVaI7wI4JHjf96o2tXx4FAAAAB7MSaBtzHi/SR/UNOPXsA2h1GJ8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAN9rqFCF4XEW37NqQZwywVwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD5tZv+MuKGwKdaM0IWHENtAAAAAASAAACgAAAAEAAAAHDzOJBgSCCVobI5QiEqoHgYAAAAzKAwNdh4zx3WUqT0bOdCYlFy9wWMPSsdFAAAAL7ITjAHwp31SUbMPWuMSTZpU1Dr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -543,51 +543,13 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,42"
-          Id="Package\LoadBooks\Flat File Source"
-          TopLeft="92.5,127.5" />
+          Size="158,42"
+          Id="Package\LoadBooks\Derived Column"
+          TopLeft="225.5,244.5" />
         <NodeLayout
           Size="177,42"
           Id="Package\LoadBooks\OLE DB Destination"
           TopLeft="99.5,401.5" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\LoadBooks\Derived Column"
-          TopLeft="225.5,244.5" />
-        <EdgeLayout
-          Id="Package\LoadBooks.Paths[Flat File Source Output]"
-          TopLeft="170.5,169.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="134,75"
-              Start="0,0"
-              End="134,67.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.5"
-                    Point2="0,37.5"
-                    Point3="4,37.5" />
-                  <mssgle:LineSegment
-                    End="130,37.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="130,37.5"
-                    Point2="134,37.5"
-                    Point3="134,41.5" />
-                  <mssgle:LineSegment
-                    End="134,67.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\LoadBooks.Paths[Derived Column Output]"
           TopLeft="304.5,286.5">
@@ -614,6 +576,44 @@
                     Point3="-116.5,61.5" />
                   <mssgle:LineSegment
                     End="-116.5,107.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="156,42"
+          Id="Package\LoadBooks\Flat File Source"
+          TopLeft="35.5,35.5" />
+        <EdgeLayout
+          Id="Package\LoadBooks.Paths[Flat File Source Output]"
+          TopLeft="113.5,77.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="191,167"
+              Start="0,0"
+              End="191,159.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,79.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,79.5"
+                    Point2="0,83.5"
+                    Point3="4,83.5" />
+                  <mssgle:LineSegment
+                    End="187,83.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="187,83.5"
+                    Point2="191,83.5"
+                    Point3="191,87.5" />
+                  <mssgle:LineSegment
+                    End="191,159.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
