@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{B51EBB92-AA80-4C52-80F5-323502959222}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{5DE0F3F4-ECFD-4597-A08E-A6D4A8C5B0A3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -81,7 +81,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAN9rqFCF4XEW37NqQZwywVwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD5tZv+MuKGwKdaM0IWHENtAAAAAASAAACgAAAAEAAAAHDzOJBgSCCVobI5QiEqoHgYAAAAzKAwNdh4zx3WUqT0bOdCYlFy9wWMPSsdFAAAAL7ITjAHwp31SUbMPWuMSTZpU1Dr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAN9rqFCF4XEW37NqQZwywVwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABroSoPLeTLJ+gS/fFETNBfAAAAAASAAACgAAAAEAAAADAS7lzxliWLVFZ/dwmHYVMYAAAA7DbC7rZmVsdvHKG2ThmahVjC65K296pdFAAAALaGV9AkxaLkBJqExP1J+Evkk9Jr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -543,39 +543,31 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="156,42"
+          Id="Package\LoadBooks\Flat File Source"
+          TopLeft="35.5,35.5" />
+        <NodeLayout
           Size="158,42"
           Id="Package\LoadBooks\Derived Column"
-          TopLeft="225.5,244.5" />
+          TopLeft="39.5,233.5" />
         <NodeLayout
           Size="177,42"
           Id="Package\LoadBooks\OLE DB Destination"
           TopLeft="99.5,401.5" />
         <EdgeLayout
-          Id="Package\LoadBooks.Paths[Derived Column Output]"
-          TopLeft="304.5,286.5">
+          Id="Package\LoadBooks.Paths[Flat File Source Output]"
+          TopLeft="116,77.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-116.5,115"
+              EndConnector="0,156"
               Start="0,0"
-              End="-116.5,107.5">
+              End="0,148.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,53.5"
-                    Point2="0,57.5"
-                    Point3="-4,57.5" />
-                  <mssgle:LineSegment
-                    End="-112.5,57.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-112.5,57.5"
-                    Point2="-116.5,57.5"
-                    Point3="-116.5,61.5" />
-                  <mssgle:LineSegment
-                    End="-116.5,107.5" />
+                    End="0,148.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -584,36 +576,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="156,42"
-          Id="Package\LoadBooks\Flat File Source"
-          TopLeft="35.5,35.5" />
         <EdgeLayout
-          Id="Package\LoadBooks.Paths[Flat File Source Output]"
-          TopLeft="113.5,77.5">
+          Id="Package\LoadBooks.Paths[Derived Column Output]"
+          TopLeft="118.5,275.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="191,167"
+              EndConnector="69.5,126"
               Start="0,0"
-              End="191,159.5">
+              End="69.5,118.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,79.5" />
+                    End="0,59" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,79.5"
-                    Point2="0,83.5"
-                    Point3="4,83.5" />
+                    Point1="0,59"
+                    Point2="0,63"
+                    Point3="4,63" />
                   <mssgle:LineSegment
-                    End="187,83.5" />
+                    End="65.5,63" />
                   <mssgle:CubicBezierSegment
-                    Point1="187,83.5"
-                    Point2="191,83.5"
-                    Point3="191,87.5" />
+                    Point1="65.5,63"
+                    Point2="69.5,63"
+                    Point3="69.5,67" />
                   <mssgle:LineSegment
-                    End="191,159.5" />
+                    End="69.5,118.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
