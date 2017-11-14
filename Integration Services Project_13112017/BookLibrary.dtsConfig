@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="DYNAMICCREDIT\azsigmond" GeneratedFromPackageName="BookLibrary" GeneratedFromPackageID="{2B93C818-1C0A-4372-80F6-A0F5246E31D2}" GeneratedDate="11/14/2017 2:31:45 PM"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[OLEDB_Libraries01].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=DC-VC15\SQLDCVC15;User ID=libraryUser;Initial Catalog=Libraries01;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[OLEDB_Libraries01].Properties[Password]" ValueType="String">
+    <ConfiguredValue>87654321</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SourceFolder].Properties[Value]" ValueType="String">
+    <ConfiguredValue>C:\WorkingOn\_git\BookLibraries\ETL_BookLibrary\==Source</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>
