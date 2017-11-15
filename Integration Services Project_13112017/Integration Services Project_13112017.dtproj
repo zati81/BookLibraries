@@ -13,7 +13,7 @@
   <DeploymentModelSpecificContent>
     <Manifest>
       <DTSPackages>
-        <DtsPackage FormatVersion="0">
+        <DtsPackage FormatVersion="-1">
           <Name>BookLibrary.dtsx</Name>
           <FullPath>BookLibrary.dtsx</FullPath>
           <References />
